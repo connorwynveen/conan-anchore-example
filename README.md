@@ -8,7 +8,7 @@ Note this example only has 3 [requires] packages listed: json-c/0.17, openssl/3.
    pip install conan
 
 2. Clone this repo locally
-   git clone: <https://...>
+   git clone: https://github.com/connorwynveen/conan-anchore-example.git
 
 3. cd into the directory
    cd conan-anchore-example
