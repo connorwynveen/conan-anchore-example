@@ -1,0 +1,8 @@
+[requires]
+json-c/0.17
+openssl/1.0.2u
+libcurl/7.85.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
