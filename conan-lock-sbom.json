@@ -47,7 +47,7 @@
    "licenses": [],
    "language": "c++",
    "cpes": [
-    "cpe:2.3:a:libcurl:libcurl:7.14.0:*:*:*:*:*:*:*"
+    "cpe:2.3:a:libcurl:libcurl:7.85.0:*:*:*:*:*:*:*"
    ],
    "purl": "pkg:conan/libcurl@7.85.0",
    "metadataType": "ConanMetadataType",
@@ -79,6 +79,37 @@
    "metadata": {
     "ref": "openssl/1.0.2u"
    }
+  },
+  {
+   "id": "da1ae23cccc93714",
+   "name": "zlib",
+   "version": "1.2.12",
+   "type": "conan",
+   "foundBy": "conan-cataloger",
+   "locations": [
+    {
+     "path": "/conan.lock",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "c++",
+   "cpes": [
+    "cpe:2.3:a:zlib:zlib:1.2.12:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:conan/zlib@1.2.12",
+   "metadataType": "ConanLockMetadataType",
+   "metadata": {
+    "ref": "zlib/1.2.12",
+    "options": {
+     "fPIC": "True",
+     "shared": "False"
+    },
+    "path": "all/conanfile.py",
+    "context": "host"
+   }
   }
  ],
  "artifactRelationships": [
@@ -108,12 +139,28 @@
    "type": "contains"
   },
   {
+   "parent": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+   "child": "da1ae23cccc93714",
+   "type": "contains"
+  },
+  {
    "parent": "d24abb7df53169c4",
    "child": "a6da1f0496a81846",
+   "type": "evident-by"
+  },
+  {
+   "parent": "da1ae23cccc93714",
+   "child": "b653b33118b314f7",
    "type": "evident-by"
   }
  ],
  "files": [
+  {
+   "id": "b653b33118b314f7",
+   "location": {
+    "path": "/conan.lock"
+   }
+  },
   {
    "id": "a6da1f0496a81846",
    "location": {
@@ -139,7 +186,7 @@
    "verbosity": 0,
    "quiet": false,
    "output": [
-    "json"
+    "syft-json"
    ],
    "output-template-path": "",
    "file": "",
