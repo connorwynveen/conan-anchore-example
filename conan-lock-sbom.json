@@ -1,0 +1,235 @@
+{
+ "artifacts": [
+  {
+   "id": "0cb8ef48e9086126",
+   "name": "json-c",
+   "version": "0.17",
+   "type": "conan",
+   "foundBy": "conan-cataloger",
+   "locations": [
+    {
+     "path": "/conanfile.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "c++",
+   "cpes": [
+    "cpe:2.3:a:json-c:json-c:0.17:*:*:*:*:*:*:*",
+    "cpe:2.3:a:json-c:json_c:0.17:*:*:*:*:*:*:*",
+    "cpe:2.3:a:json_c:json-c:0.17:*:*:*:*:*:*:*",
+    "cpe:2.3:a:json_c:json_c:0.17:*:*:*:*:*:*:*",
+    "cpe:2.3:a:json:json-c:0.17:*:*:*:*:*:*:*",
+    "cpe:2.3:a:json:json_c:0.17:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:conan/json-c@0.17",
+   "metadataType": "ConanMetadataType",
+   "metadata": {
+    "ref": "json-c/0.17"
+   }
+  },
+  {
+   "id": "39fac83eb6def62a",
+   "name": "libcurl",
+   "version": "7.85.0",
+   "type": "conan",
+   "foundBy": "conan-cataloger",
+   "locations": [
+    {
+     "path": "/conanfile.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "c++",
+   "cpes": [
+    "cpe:2.3:a:libcurl:libcurl:7.14.0:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:conan/libcurl@7.85.0",
+   "metadataType": "ConanMetadataType",
+   "metadata": {
+    "ref": "libcurl/7.85.0"
+   }
+  },
+  {
+   "id": "d24abb7df53169c4",
+   "name": "openssl",
+   "version": "1.0.2u",
+   "type": "conan",
+   "foundBy": "conan-cataloger",
+   "locations": [
+    {
+     "path": "/conanfile.txt",
+     "annotations": {
+      "evidence": "primary"
+     }
+    }
+   ],
+   "licenses": [],
+   "language": "c++",
+   "cpes": [
+    "cpe:2.3:a:openssl:openssl:1.0.2u:*:*:*:*:*:*:*"
+   ],
+   "purl": "pkg:conan/openssl@1.0.2u",
+   "metadataType": "ConanMetadataType",
+   "metadata": {
+    "ref": "openssl/1.0.2u"
+   }
+  }
+ ],
+ "artifactRelationships": [
+  {
+   "parent": "0cb8ef48e9086126",
+   "child": "a6da1f0496a81846",
+   "type": "evident-by"
+  },
+  {
+   "parent": "39fac83eb6def62a",
+   "child": "a6da1f0496a81846",
+   "type": "evident-by"
+  },
+  {
+   "parent": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+   "child": "0cb8ef48e9086126",
+   "type": "contains"
+  },
+  {
+   "parent": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+   "child": "39fac83eb6def62a",
+   "type": "contains"
+  },
+  {
+   "parent": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+   "child": "d24abb7df53169c4",
+   "type": "contains"
+  },
+  {
+   "parent": "d24abb7df53169c4",
+   "child": "a6da1f0496a81846",
+   "type": "evident-by"
+  }
+ ],
+ "files": [
+  {
+   "id": "a6da1f0496a81846",
+   "location": {
+    "path": "/conanfile.txt"
+   }
+  }
+ ],
+ "source": {
+  "id": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+  "name": ".",
+  "version": "",
+  "type": "directory",
+  "metadata": {
+   "path": "."
+  }
+ },
+ "distro": {},
+ "descriptor": {
+  "name": "syft",
+  "version": "0.85.0",
+  "configuration": {
+   "configPath": "",
+   "verbosity": 0,
+   "quiet": false,
+   "output": [
+    "json"
+   ],
+   "output-template-path": "",
+   "file": "",
+   "check-for-app-update": true,
+   "dev": {
+    "profile-cpu": false,
+    "profile-mem": false
+   },
+   "log": {
+    "structured": false,
+    "level": "warn",
+    "file-location": ""
+   },
+   "catalogers": null,
+   "package": {
+    "cataloger": {
+     "enabled": true,
+     "scope": "Squashed"
+    },
+    "search-unindexed-archives": false,
+    "search-indexed-archives": true
+   },
+   "golang": {
+    "search-local-mod-cache-licenses": false,
+    "local-mod-cache-dir": "",
+    "search-remote-licenses": false,
+    "proxy": "",
+    "no-proxy": ""
+   },
+   "linux-kernel": {
+    "catalog-modules": true
+   },
+   "attest": {},
+   "file-metadata": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "digests": [
+     "sha256"
+    ]
+   },
+   "file-classification": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    }
+   },
+   "file-contents": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "Squashed"
+    },
+    "skip-files-above-size": 1048576,
+    "globs": []
+   },
+   "secrets": {
+    "cataloger": {
+     "enabled": false,
+     "scope": "AllLayers"
+    },
+    "additional-patterns": {},
+    "exclude-pattern-names": [],
+    "reveal-values": false,
+    "skip-files-above-size": 1048576
+   },
+   "registry": {
+    "insecure-skip-tls-verify": false,
+    "insecure-use-http": false,
+    "auth": []
+   },
+   "exclude": [],
+   "platform": "",
+   "name": "",
+   "source": {
+    "name": "",
+    "version": "",
+    "file": {
+     "digests": [
+      "sha256"
+     ]
+    }
+   },
+   "parallelism": 1,
+   "default-image-pull-source": "",
+   "base-path": ""
+  }
+ },
+ "schema": {
+  "version": "9.0.0",
+  "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-9.0.0.json"
+ }
+}
