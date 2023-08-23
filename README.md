@@ -1,8 +1,8 @@
 # conan-anchore-example
-This repo has an example of how Syft can generate an SBOM for a C/C++ based code base that uses Conan as the package manager to build software. The code in this repo produces a simple Conan build executable that prints out "Hello world" when run. We will covers how to generate an SBOM for this Conan Hello World app and how to import that SBOM into Anchore Enterprise. Once the SBOM is in Anchore Enterprise, we can do things like manage the SBOMs (e.g., group them into an Application/versions of an Application) and do things like identify vulnerabilities within those SBOMs
+This repo has an example of how Syft can generate an SBOM for a C/C++ based code base that uses Conan as the package manager to build software. The code in this repo produces a simple Conan build executable that prints out "Hello world" when run. We will covers how to generate an SBOM for this Conan Hello World app and how to import that SBOM into Anchore Enterprise. Once the SBOM is in Anchore Enterprise, we can do things like manage the SBOMs (e.g., group them into an Application/versions of an Application) and do things like identify vulnerabilities within those SBOMs. The SBOM that this example will help you generate and test is also in this repo as conan-lock-sbom.json, which reflects the 3 required packages and the 1 transitive dependency for our Hello World application
 
 #How to get this Conan build to work and an SBOM generated into Anchore Enterprise
-Note this example only has 3 [requires] packages listed: json-c/0.17, openssl/3.0.5, libcurl/7.85.0. You can modify the conanfile.txt to include additional Conan packages in the build
+Note this example only has 3 [requires] packages listed: json-c/0.17, openssl/1.0.2u, libcurl/7.85.0. You can modify the conanfile.txt to include additional Conan packages in the build. The conan.lock file contains the openssl dependency zlib/1.2.12.
 
 1. Install Conan:
 
